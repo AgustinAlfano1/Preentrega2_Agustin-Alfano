@@ -1,0 +1,72 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+a
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: brown;
+}
+.encabezado
+{
+    height: 9%;
+}
+
+.flex-container
+{
+    background-image: url(assets/vuelo.jpg);
+    background-size:cover;
+
+    height: 91%;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.grid-layout
+{
+    height: 400px;
+    width: 500px;
+    background-color: #323232;
+    border: 4px solid #414AFF;
+    border-radius: 50px;
+    margin: 25px;
+
+    display: grid;
+
+    grid-template-areas:    'titulo'
+                            'contenido'
+                            'arma';
+
+    grid-template-rows: 25% 55% 20%;
+
+
+}
+
+.caja
+{
+    color: white;
+}
+
+.titulo
+{
+    grid-area: titulo;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+}
+.contenido
+{
+    grid-area: contenido;
+    padding: 25px;
+}
+.arma
+{
+    grid-area: arma;
+    text-align: center;
+    line-height: 50px;
+}

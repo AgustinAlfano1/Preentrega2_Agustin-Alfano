@@ -70,3 +70,47 @@ a
     text-align: center;
     line-height: 50px;
 }
+
+.arriba
+{
+    height: 15%;
+}
+
+.main
+{
+    height: 55%;
+}
+
+.botones
+{
+    height: 20%;
+    background-color: #8BB4FF;
+}
+
+.footer
+{
+    height: 10%;
+    background-color: #8BB4FF;
+}
+
+.caja3
+{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.playa
+{
+    background: url(assets/playa.jpg) -100px 0px;
+    background-size: cover;
+}
+.montaña
+{
+    background: url(assets/montaña.jpg) -100px 0px;
+    background-size: cover;
+}
+.ciudad
+{
+    background: url(assets/cuidad.jpg) -150px 0px;
+    background-size: cover;
+}

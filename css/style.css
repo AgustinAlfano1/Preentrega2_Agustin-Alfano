@@ -3,30 +3,34 @@
     padding: 0;
     margin: 0;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 
+/*INDEX*/
+
+/*Seccion 1 de la pagina WEB*/
+.encabezado
+{
+    height: 9%;
+}
 a
 {
     font-weight: bold;
     font-size: 20px;
     color: brown;
 }
-.encabezado
-{
-    height: 9%;
-}
 
 .flex-container
 {
     background-image: url(assets/vuelo.jpg);
     background-size:cover;
-
     height: 91%;
-
     display: flex;
     justify-content: right;
     align-items: center;
 }
-
 .grid-layout
 {
     height: 400px;
@@ -37,21 +41,18 @@ a
     margin: 25px;
 
     display: grid;
-
     grid-template-areas:    'titulo'
                             'contenido'
                             'arma';
 
     grid-template-rows: 25% 55% 20%;
-
-
 }
-
 .caja
 {
     color: white;
 }
 
+/*Areas del GRID*/
 .titulo
 {
     grid-area: titulo;
@@ -71,32 +72,29 @@ a
     line-height: 50px;
 }
 
+/*Seccion 2 de pa pagina WEB*/
+
+.container-fluid
+{
+    background: rgb(147,117,105);
+    background: linear-gradient(125deg, #775C52 0%, rgba(189,125,99,1) 25%, rgba(242,149,110,1) 50%, rgba(183,104,78,1) 75%, #83414D 100%);
+}
+
 .arriba
 {
     height: 15%;
 }
-
 .main
 {
     height: 55%;
 }
-
 .botones
 {
     height: 20%;
-    background-color: #8BB4FF;
 }
-
 .footer
 {
     height: 10%;
-    background-color: #8BB4FF;
-}
-
-.caja3
-{
-    text-align: center;
-    padding-top: 15px;
 }
 
 .playa
@@ -114,3 +112,33 @@ a
     background: url(assets/cuidad.jpg) -150px 0px;
     background-size: cover;
 }
+
+
+.caja2
+{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*HOVER´S*/
+
+.ciudad:hover
+{
+    border: 5px solid #414AFF;
+    border-radius: 15px;
+}
+
+.montaña:hover
+{
+    border: 5px solid #414AFF;
+    border-radius: 15px;
+}
+
+.playa:hover
+{
+    border: 5px solid #414AFF;
+    border-radius: 15px;
+}
+
+/*CONTACTO*/
+

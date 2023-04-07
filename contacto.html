@@ -6,8 +6,37 @@
     <title>Contactenos</title>
     <link rel="icon" href="css/assets/icono.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body class="body-contacto">
-    
+        <div class="encabezado bg-dark">
+            <nav class="nav justify-content-end">
+                <a class="nav-link" href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
+                <a class="nav-link" href="#">Contactenos</a>
+            </nav>
+        </div>
+        <div class="grid-layout2">
+            <div class="caja3 imagen"></div>
+            <div class="caja3 nombyapell">
+                <form class="formnomyapll">
+                    <label for="fname">Nombre y Apellido:</label><br>
+                    <input type="text" id="fname" name="fname" value="">
+                </form>
+            </div>
+            <div class="caja3 email">
+                <form class="formemail">
+                    <label for="femail">Email:</label><br>
+                    <input type="text" id="femail" name="femail" value="">
+                </form>
+            </div>
+            <div class="caja3 msj">
+                <form class="formmsj">
+                    <textarea name="message" rows="8" cols="50">Envia tu consulta</textarea>
+                    <br><br>
+            </div>
+            <div class="caja3 enviar"><button type="button" class="btn-secondary btn-lg bg-dark">ENVIAR</button></div>
+        </div>
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

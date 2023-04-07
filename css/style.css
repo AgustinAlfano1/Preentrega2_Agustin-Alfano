@@ -142,7 +142,57 @@ a
 
 /*CONTACTO*/
 
-.body-contacto
+.grid-layout2
 {
-    background-color: #414AFF;
+    background: linear-gradient(160deg, #FAC9B8 0%, #E5D4C0 25%, #C5DECD 50%, #A1E8CC 75%, #495159 100%);
+    height: 91%;
+
+    display: grid;
+    grid-template-areas: 'imagen nombreyapellido auto'
+                         'imagen email auto'
+                         'imagen msj auto'
+                         'imagen boton auto';
+    grid-template-columns: 55% 30% 15%;
+    grid-template-rows: 20% 15% 40% 25%;
+
+    text-align: center;
+}
+
+.imagen
+{
+    width: 600px;
+    height: 400px;
+    margin: auto auto;
+
+    background: url(assets/contacto.jpg);
+    background-size: cover;
+    border: 5px solid #FFB39E;
+    border-radius: 15px;
+    
+    grid-area: imagen;
+    text-align: center;
+}
+.nombyapell
+{
+    grid-area: nombreyapellido;
+    padding-top: 45px;
+}
+.email
+{
+    grid-area: email;
+    padding-top: 15px;
+}
+.msj
+{
+    grid-area: msj;
+    padding-top: 15px;
+}
+.enviar
+{
+    grid-area: boton;
+    padding-top: 15px;
+}
+.caja3
+{
+    font-weight: bold;
 }

@@ -32,7 +32,7 @@ a
 }
 .grid-layout
 {
-    height: 400px;
+    height: 550px;
     width: 500px;
     background-color: #323232;
     border: 4px solid #414AFF;
@@ -44,7 +44,7 @@ a
                             'contenido'
                             'arma';
 
-    grid-template-rows: 25% 55% 20%;
+    grid-template-rows: 15% 60% 25%;
 }
 .caja
 {
@@ -69,6 +69,7 @@ a
     grid-area: arma;
     text-align: center;
     line-height: 50px;
+    margin: 10px;
 }
 
 /*Seccion 2 de pa pagina WEB*/
@@ -76,47 +77,36 @@ a
 .container-fluid
 {
     background: rgb(147,117,105);
-    background: linear-gradient(125deg, #775C52 0%, rgba(189,125,99,1) 25%, rgba(242,149,110,1) 50%, rgba(183,104,78,1) 75%, #83414D 100%);
-}
-
-.arriba
-{
-    height: 15%;
+    background: linear-gradient(375deg, #775C52 0%, rgba(189,125,99,1) 25%, rgba(242,149,110,1) 50%, rgba(183,104,78,1) 75%, #83414D 100%);
 }
 .main
 {
-    height: 55%;
-}
-.botones
-{
-    height: 20%;
-}
-.footer
-{
-    height: 10%;
+    height: 100%;
+    padding-top: 30px;
 }
 
 .playa
 {
-    background: url(assets/playa.jpg) -100px 0px;
+    background-image: url(assets/playa.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .montaña
 {
-    background: url(assets/montaña.jpg) -100px 0px;
+    background-image: url(assets/montaña.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .ciudad
 {
-    background: url(assets/cuidad.jpg) -150px 0px;
+    background-image: url(assets/cuidad.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-.caja2
+.boton
 {
     text-align: center;
-    padding-top: 15px;
+    padding: 30px;
 }
 
 /*HOVER´S*/
@@ -147,30 +137,15 @@ a
     height: 91%;
 
     display: grid;
-    grid-template-areas: 'imagen nombreyapellido auto'
-                         'imagen email auto'
-                         'imagen msj auto'
-                         'imagen boton auto';
-    grid-template-columns: 55% 30% 15%;
+    grid-template-areas: 'nombreyapellido'
+                         'email'
+                         'msj'
+                         'boton';
     grid-template-rows: 20% 15% 40% 25%;
 
     text-align: center;
 }
 
-.imagen
-{
-    width: 600px;
-    height: 400px;
-    margin: auto auto;
-
-    background: url(assets/contacto.jpg);
-    background-size: cover;
-    border: 5px solid #FFB39E;
-    border-radius: 15px;
-    
-    grid-area: imagen;
-    text-align: center;
-}
 .nombyapell
 {
     grid-area: nombreyapellido;
